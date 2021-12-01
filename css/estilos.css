@@ -1,0 +1,165 @@
+:root
+{
+    --height:100vh;
+    --width:100%;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+#particles-js 
+{
+    height: var(--height);
+    width: var(--width);
+    position: relative;
+    z-index: -1;
+    background: black;
+}
+
+/*Homepage*/
+
+.container
+{
+    color: white;
+    position: absolute; /* Si las partiuclas se ven raras poner esto en relative*/
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: calc(1em + 1vw);
+    line-height: 2em;
+}
+
+.boton
+{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 0.5em;
+    padding: 10px;
+}
+
+.boton:hover
+{
+    box-shadow:0px 0px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* About me */
+
+.about_me
+{
+    height: var(--height);
+    width: var(--width);
+    background: lightblue;
+}
+
+.title, .me, .img
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.text
+{
+    text-align: justify;
+    margin: 20px auto;
+    font-size: 20px;
+    width: 30em;
+}
+
+/* Habilidades*/
+
+.habilidades
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding-bottom: 2.777em;
+    margin: 80px;
+}
+
+/* Proyects */
+
+.proyects
+{
+    height: var(--height);
+    width: var(--width);
+    background: yellowgreen;
+}
+
+.proyectos
+{
+    text-align: center;
+}
+
+.works
+{
+    display: flex;
+    justify-content: center;
+}
+
+.trabajo
+{
+    margin: 20px 20px;
+    text-align: center;
+}
+
+/*Contact me */
+
+.formc
+{
+    text-align: center;
+}
+
+.nombre,.correo,.subject,.mensaje,.enviar
+{
+    background: rgba(255, 255, 255, 0.11);
+    color: rgb(233, 22, 22);
+    font-size: 20px;
+    border: 2px solid rgb(146, 17, 17);
+}
+
+.nombre,.correo
+{
+    width: 350px;
+    height: 50px;
+    margin: 5px;
+    margin-top: 100px;
+}
+
+.subject
+{
+    width: 714px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.mensaje
+{
+    width: 714px;
+    height: 200px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.enviar
+{
+    width: 714px;
+    height: 50px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.enviar:hover
+{
+    cursor: pointer;
+}
